@@ -6,6 +6,9 @@ daily-code-practice/
 ├─ day2/
 │   ├─ script.py
 │   └─ README.md
+├─ day3/
+│   ├─ script.py
+│   └─ README.md
 ...
 ├─ day10/
 │   ├─ script.py
