@@ -6,3 +6,5 @@ print("Sum:", sum(numbers))
 
 # Maximum
 print("Max:", max(numbers))
+
+print("Avg:", avg(numbers))
