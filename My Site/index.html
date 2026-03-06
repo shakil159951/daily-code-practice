@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <title>Amar Website</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f2f5;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+        #message {
+            margin-top: 15px;
+            font-weight: bold;
+            color: #007bff;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1 id="my-name">Tomar Name</h1>
+        <p>Welcome to my personal corner of the web!</p>
+        <div id="message"></div>
+    </div>
+
+    <script>
+        // JavaScript logic
+        const nameElement = document.getElementById('my-name');
+        const messageDisplay = document.getElementById('message');
+
+        // Mouse name-er upor nile color change hobe
+        nameElement.addEventListener('mouseover', () => {
+            nameElement.style.color = '#ff4757';
+            nameElement.style.transform = 'scale(1.1)';
+            messageDisplay.innerText = "Hello! Amar website-e apnake swagoto.";
+        });
+
+        // Mouse shore gele ager moto hoye jabe
+        nameElement.addEventListener('mouseout', () => {
+            nameElement.style.color = '#333';
+            nameElement.style.transform = 'scale(1)';
+            messageDisplay.innerText = "";
+        });
+
+        // Click korle ekta alert dibe
+        nameElement.addEventListener('click', () => {
+            alert("Tumi amar name-e click korecho! Have a great day!");
+        });
+    </script>
+
+</body>
+</html>
