@@ -2,3 +2,4 @@
 
 - Learned list operations: sum, max
 - Practiced printing results
+- Updated
